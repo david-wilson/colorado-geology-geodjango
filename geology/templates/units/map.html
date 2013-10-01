@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Colorado Geologic Map {% endblock title %}
+{% block extra_css %}
+<style>
+    #map {
+        width: 800px;
+        height: 600px;
+       }
+ </style>
+{% endblock extra_css %}
+{% block page_title %}Colorado Geologic Map{% endblock page_title %}
+
+{% block content %}
+<div id="map"></div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+    var unitUrl = "{% url 'units-json' %}";
+</script>
+<script src="{% static 'openlayers/lib/OpenLayers.js' %}" />
+<script src="{% static 'js/project.js' %}"></script>
+{% endblock extra_js %}

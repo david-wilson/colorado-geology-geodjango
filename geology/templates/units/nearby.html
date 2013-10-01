@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Rocks Near Me!{% endblock title %}
+{% block page_title %}Rocks Near Me!{% endblock page_title %}
+{% block extra_css %}
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+ <style>
+    #map { 
+        height: 400px;
+        width: 6b00px;
+     }
+ </style>
+{% endblock extra_css %}
+
+{% block content %}
+<div id="location"></div>
+<div id="rocks">Finding rocks...</div>
+<div id="map"></div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>var url = "{% url 'find-rocks' %}";</script>
+<script src="{% static 'jquery/jquery.min.js' %}" ></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script src="{% static 'js/map.js' %}" ></script>
+{% endblock extra_js %}
+

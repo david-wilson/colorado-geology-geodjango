@@ -1,0 +1,5 @@
+Data in this directory:
+
+Stoeser, Douglas B., Green, Gregory N., Morath, Laurie C., Heran, William D., Wilson, Anna B., Moore, David W., and Bradley S. Van Gosen, 2005, Preliminary Integrated Geologic Map Databases for the United States Central States: Montana, Wyoming, Colorado, New Mexico, Kansas, Oklahoma, Texas, Missouri, Arkansas, and Louisiana, - The State of Colorado: U.S. Geological Survey Open-File Report 2005-1351, U.S. Geological Survey, Denver, CO.
+
+Downloaded via: http://mrdata.usgs.gov/geology/state/state.php?state=CO
