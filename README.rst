@@ -11,13 +11,13 @@ You will also need npm and Bower installed to retrieve the front end components.
 
 Within a virtualenv, install requirements via:
 
-'''sh
+```sh
 $ pip install -r requirements/base.txt
-'''
+```
 
 Create the user and database via:
 
-'''sh
+```sh
 $ sudo su postgres
 
 # Create user 'geouser'
@@ -36,7 +36,7 @@ $ psql geology
 =# CREATE EXTENSION postgis;
 =# \q
 $ exit
-'''
+```
 
 Sync database, load data, and install Bower components:
 
