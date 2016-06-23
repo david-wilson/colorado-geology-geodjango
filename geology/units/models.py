@@ -8,8 +8,8 @@ class Unit(models.Model):
     geom = models.GeometryField(srid=unit_srid)
     objects = models.GeoManager()
 
-    def __unicode_(self):
-        return "Unit %s" % (name)
+    def __unicode__(self):
+        return "Unit %s" % (self.name)
 
 # Auto-generated `LayerMapping` dictionary for Unit model
 unit_mapping = {
